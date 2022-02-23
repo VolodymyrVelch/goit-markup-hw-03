@@ -1,0 +1,181 @@
+:root {
+  --main-background-color: #ffffff;
+  --second-background-color: #f5f4fa;
+  --third-background-color: #2f303a;
+  --primary-text-color: #212121;
+  --second-text-color: #757575;
+  --accent-color: #2196f3;
+  --third-text-color: #ffffff;
+}
+body {
+  color: var(--primary-text-color);
+  background-color: var(--main-background-color);
+  font-family: Roboto, sans-serif;
+}
+/* скриваєм крапки, підкреслення */
+.list {
+  list-style: none;
+  text-decoration: none;
+}
+/* logo */
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.11;
+  letter-spacing: 0.03em;
+}
+.logo .black {
+  color: var(--primary-text-color);
+}
+.logo .white {
+  color: var(--third-text-color);
+}
+/* навігація сайту */
+.nav-link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+/* активна сторінка */
+.activ-page {
+  color: var(--accent-color);
+}
+/* контакти */
+.contact-link {
+  color: var(--second-text-color);
+  font-weight: 500;
+  font-style: normal;
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
+}
+/* Герой */
+.hero {
+  background-color: var(--third-background-color);
+  color: var(--third-text-color);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+/* кнопки */
+.button {
+  font-family: inherit;
+  color: var(--third-text-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.86;
+}
+.button:hover,
+.button:focus {
+  color: var(--primary-text-color);
+  background-color: var(--second-background-color);
+}
+/* секція переваги advantages */
+.section-title {
+  color: var(--primary-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.adv-title {
+  color: var(--primary-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+/* параграфи */
+.adv-paragraph {
+  color: var(--second-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+/* команда */
+.back-color {
+  background-color: var(--second-background-color);
+}
+.team {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.team-position {
+  color: var(--second-text-color);
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+/* футер */
+.footer {
+  background-color: var(--third-background-color);
+}
+/* лого футер */
+.logo-foot {
+  color: var(--third-text-color);
+}
+/* локація */
+.adress {
+  color: var(--third-text-color);
+  font-style: normal;
+}
+.adress:hover,
+.adress:link {
+  color: var(--accent-color);
+}
+/* контакти футер */
+.contact-link {
+  color: var(--second-text-color);
+}
+/* портфолио */
+/* Кнопки фільтр */
+.button-radio {
+  font-family: inherit;
+  color: var(--primary-text-color);
+  background-color: var(--second-background-color);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.button-radio:hover,
+.button-radio:focus {
+  color: var(--third-text-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+/* приклади робіт */
+.example-title {
+  color: var(--primary-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.example-var {
+  color: var(--second-text-color);
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.03em;
+}
