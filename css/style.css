@@ -16,11 +16,11 @@ html {
   box-sizing: inherit;
 }
 .container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1170px;
 
   outline: 2px solid tomato;
 }
@@ -32,10 +32,21 @@ body {
 }
 /* скриваєм крапки, підкреслення */
 .list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
   text-decoration: none;
 }
 /* logo */
+.header {
+  background-color: var(--main-background-color);
+  border-bottom: 1px solid #ececec;
+}
+.header-cont {
+  display: flex;
+  align-items: center;
+}
 .logo {
   color: var(--accent-color);
   font-family: Raleway;
@@ -51,13 +62,27 @@ body {
   color: var(--third-text-color);
 }
 /* навігація сайту */
+.nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: 93px;
+}
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.nav-item + .nav-item {
+  margin-left: 50px;
+}
+
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
@@ -67,6 +92,15 @@ body {
   color: var(--accent-color);
 }
 /* контакти */
+.contact {
+  display: flex;
+  margin-left: auto;
+  padding: 0;
+}
+.contact-item + .contact-item {
+  margin-left: 50px;
+}
+
 .contact-link {
   color: var(--second-text-color);
   font-weight: 500;
@@ -80,8 +114,12 @@ body {
 .hero {
   background-color: var(--third-background-color);
   color: var(--third-text-color);
+  text-align: center;
 }
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -97,6 +135,7 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.86;
+  border-radius: 4px;
 }
 .button:hover,
 .button:focus {
@@ -104,14 +143,24 @@ body {
   background-color: var(--second-background-color);
 }
 /* секція переваги advantages */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .section-title {
+  margin-top: 0;
+
   color: var(--primary-text-color);
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 .adv-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   color: var(--primary-text-color);
   font-weight: bold;
   font-size: 14px;
@@ -120,17 +169,37 @@ body {
   text-transform: uppercase;
 }
 /* параграфи */
+.adv {
+  display: flex;
+  flex-wrap: wrap;
+}
+.adv-item {
+  margin-right: 30px;
+  width: 270px;
+}
+.adv-item:nth-child(4n) {
+  margin-right: 0px;
+}
 .adv-paragraph {
+  margin-top: 10px;
+
   color: var(--second-text-color);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+/* чим ми займаємось */
+.index-example {
+  display: flex;
 }
 /* команда */
 .back-color {
   background-color: var(--second-background-color);
 }
 .team {
+  display: flex;
+}
+.team-mate {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -146,12 +215,15 @@ body {
 /* футер */
 .footer {
   background-color: var(--third-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 /* лого футер */
 .logo-foot {
   color: var(--third-text-color);
 }
 /* локація */
+
 .adress {
   color: var(--third-text-color);
   font-style: normal;
@@ -166,6 +238,14 @@ body {
 }
 /* портфолио */
 /* Кнопки фільтр */
+.button-portf {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.button-portf .item + .item {
+  margin-left: 8px;
+}
 .button-radio {
   font-family: inherit;
   color: var(--primary-text-color);
@@ -176,6 +256,8 @@ body {
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
+  border-radius: 4px;
+  border: transparent;
 }
 .button-radio:hover,
 .button-radio:focus {
@@ -184,6 +266,18 @@ body {
   cursor: pointer;
 }
 /* приклади робіт */
+.example {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 54px;
+}
+.example-item {
+  width: 370px;
+  margin-right: 30px;
+}
+.example-item:nth-child(3n) {
+  margin-right: 0px;
+}
 .example-title {
   color: var(--primary-text-color);
   font-weight: bold;

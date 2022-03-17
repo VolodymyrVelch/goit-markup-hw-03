@@ -12,76 +12,80 @@
 </head>
 <body>
     <!-- Шапка -->
-    <header>
+    <header class="header">
+        <div class="header-cont container">
         <a href="" class="logo list">Web<span class="logo black">Studio</span></a>
-        <nav clas="nav">
-            <ul class="nav-link list">
-                <li><a href="./index.html" class="nav-link list">Студия</a></li>
-                <li><a href="" class="nav-link list activ-page ">Портфолио</a></li>
-                <li><a href="" class="nav-link list">Контакты</a></li>
+        <nav >        
+            <ul class="nav list">
+                <li class="nav-item"><a href="./index.html" class="nav-link list">Студия</a></li>
+                <li class="nav-item"><a href="" class="nav-link list activ-page ">Портфолио</a></li>
+                <li class="nav-item"><a href="" class="nav-link list" >Контакты</a></li>
+                
             </ul>
         </nav>
         <ul class="contact list">
-            <li><a href="maaito:info@devstudio.com" class="contact-link list">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="contact-link list">+380961111111</a></li>
+            <li class="contact-item"><a href="maaito:info@devstudio.com" class="contact-link list">info@devstudio.com</a></li>
+            <li class="contact-item"><a href="tel:+380961111111" class="contact-link list">+380961111111</a></li>
         </ul>
+        </div>
     </header>
+
     <!-- Головний контент -->
     <main>
         <!-- секція приклади наших робіт -->
-        <section>
+        <section class="section container">
             <!-- Скритий заголовок -->
             <h1 hidden>Наші роботи</h1>
             <!-- фільтр прикладів робіт -->
-            <ul class="list">
-                <li><button type="button" class="button-radio">Все</button></li>
-                <li><button type="button" class="button-radio">Веб-сайты</button></li>
-                <li><button type="button" class="button-radio">Приложения</button></li>
-                <li><button type="button" class="button-radio">Дизайн</button></li>
-                <li><button type="button" class="button-radio">Маркетинг</button></li>
+            <ul class="button-portf list">
+                <li class="item"><button type="button" class="button-radio">Все</button></li>
+                <li class="item"><button type="button" class="button-radio">Веб-сайты</button></li>
+                <li class="item"><button type="button" class="button-radio">Приложения</button></li>
+                <li class="item"><button type="button" class="button-radio">Дизайн</button></li>
+                <li class="item"><button type="button" class="button-radio">Маркетинг</button></li>
             </ul>
-            <ul class="list">
-                <li>
+            <ul class="example list">
+                <li class="example-item">
                     <img src="./images/imgPortfolio1-min.jpg" alt="Ноутбук" width="370" height="294">
                     <h2  class="example-title">Технокряк</h2>
                     <p class="example-var">Веб-сайт</p>
                 </li>
-                <li>
+                <li class="example-item">
                     <img src="./images/imgPortfolio2-min.jpg" alt="Постер два баскетболіста" width="370" height="294">
                     <h2  class="example-title" lang="en">Постер New Orlean vs Golden Star</h2>
                     <p class="example-var">Дизайн</p>
                 </li>
-                <li>
+                <li class="example-item">
                     <img src="./images/imgPortfolio3-min.jpg" alt="Логотип ресторану" width="370" height="294">
                     <h2  class="example-title" lang="en">Ресторан Seafood</h2>
                     <p class="example-var">Приложение</p>
                 </li>
-                <li>
+                <li class="example-item">
                     <img src="./images/imgPortfolio4-min.jpg" alt="Навушники" width="370" height="294">
                     <h2  class="example-title" lang="en">Проект Prime</h2>
                     <p class="example-var">Маркетинг</p>
                 </li>
-                <li>
+                <li class="example-item">
                     <img src="./images/imgPortfolio5-min.jpg" alt="Дві коробки" width="370" height="294">
                     <h2  class="example-title">Проект Boxes</h2>
                     <p class="example-var">Приложение</p>
                 </li>
-                <li>
+                <li class="example-item">
                     <img src="./images/imgPortfolio6-min.jpg" alt="Десктоп iMac" width="370" height="294">
                     <h2 lang="en" class="example-title"> Inspiration has no Borders</h2>
                     <p  class="example-var">Веб-сайт</p>
                 </li>
-                <li>
+                <li class="example-item">
                     <img src="./images/imgPortfolio7-min.jpg" alt="Відкрита книга" width="370" height="294">
                     <h2 lang="en" class="example-title">Издание Limited Edition</h2>
                     <p lang="en" class="example-var">Проект LAB</p>
                 </li>
-                <li>
+                <li class="example-item">
                     <img src="./images/imgPortfolio8-min.jpg" alt="Етикетка" width="370" height="294">
                     <h2 class="example-title">Проект LAB</h2>
                     <p class="example-var">Маркетинг</p>
                 </li>
-                <li>
+                <li class="example-item">
                     <img src="./images/imgPortfolio9-min.jpg" alt="Руки над клавіатурою" width="370" height="294">
                     <h2 lang="en" class="example-title">Growing Business</h2>
                     <p class="example-var">Приложение</p>
@@ -91,6 +95,7 @@
     </main>
     <!-- Футер -->
     <footer class="footer">
+        <div class="container">
         <a href="" class="logo list">Web<span class="logo white">Studio</span></a>
         <address>
             <ul class="contact list">
@@ -100,6 +105,8 @@
                 <li><a href="tel:+380961111111" class="contact-link list">+380961111111</a></li>
             </ul>
         </address>
+        </div>
+        
     </footer>
 </body>
 </html>
