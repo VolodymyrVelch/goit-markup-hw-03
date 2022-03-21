@@ -6,6 +6,7 @@
   --second-text-color: #757575;
   --accent-color: #2196f3;
   --third-text-color: #ffffff;
+  --margin-pic: 30px;
 }
 html {
   box-sizing: border-box;
@@ -15,14 +16,25 @@ html {
 *::after {
   box-sizing: inherit;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .container {
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
-
-  outline: 2px solid tomato;
 }
 
 body {
@@ -116,18 +128,21 @@ body {
   color: var(--third-text-color);
   text-align: center;
 }
+.hero-cont {
+  padding: 200px 0;
+}
 .hero-title {
-  margin-top: 0;
-  margin-bottom: 30px;
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 /* кнопки */
 .button {
+  margin-top: 30px;
+
   font-family: inherit;
   color: var(--third-text-color);
   background-color: var(--accent-color);
@@ -148,7 +163,7 @@ body {
   padding-bottom: 94px;
 }
 .section-title {
-  margin-top: 0;
+  margin: 0;
 
   color: var(--primary-text-color);
   font-weight: bold;
@@ -174,7 +189,7 @@ body {
   flex-wrap: wrap;
 }
 .adv-item {
-  margin-right: 30px;
+  margin-right: var(--margin-pic);
   width: 270px;
 }
 .adv-item:nth-child(4n) {
@@ -191,13 +206,32 @@ body {
 /* чим ми займаємось */
 .index-example {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  flex-basis: calc(100% / 3);
 }
+.index-example .item + .item {
+  margin-left: var(--margin-pic);
+}
+
 /* команда */
 .back-color {
   background-color: var(--second-background-color);
 }
 .team {
   display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(100% / 4);
+  margin-top: 50px;
+}
+.team-item {
+  background-color: var(--main-background-color);
+}
+.team-item + .team-item {
+  margin-left: var(--margin-pic);
+}
+.team-content {
+  padding: 30px 0;
 }
 .team-mate {
   color: var(--primary-text-color);
@@ -205,12 +239,17 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 .team-position {
+  margin-top: 10px;
+  margin-bottom: 30;
+
   color: var(--second-text-color);
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 /* футер */
 .footer {
@@ -233,17 +272,27 @@ body {
   color: var(--accent-color);
 }
 /* контакти футер */
+.contact-footer {
+  margin-top: 20px;
+  display: block;
+}
+.contact-footer > .item {
+  margin-top: 9px;
+}
+
 .contact-link {
   color: var(--second-text-color);
 }
+
 /* портфолио */
 /* Кнопки фільтр */
-.button-portf {
+.button-card {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 34px;
 }
-.button-portf .item + .item {
+.button-card .item + .item {
   margin-left: 8px;
 }
 .button-radio {
@@ -266,26 +315,40 @@ body {
   cursor: pointer;
 }
 /* приклади робіт */
-.example {
+.card-set {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 54px;
+  margin-top: calc(-1 * var(--margin-pic));
+  margin-left: calc(-1 * var(--margin-pic));
+  padding: 0;
+
+  list-style: none;
 }
-.example-item {
-  width: 370px;
-  margin-right: 30px;
+
+.card-set > .item {
+  /* flex-basis: calc((100%-30px) / 3); */
+  flex-basis: calc(100% / 3 - var(--margin-pic));
+  margin-left: var(--margin-pic);
+  margin-top: var(--margin-pic);
 }
-.example-item:nth-child(3n) {
-  margin-right: 0px;
+.card-content {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
-.example-title {
+
+.card-title {
+  /* margin-bottom: 0; */
+
   color: var(--primary-text-color);
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.example-var {
+.card-text {
+  /* margin-top: 4px;
+  margin-bottom: 0; */
+
   color: var(--second-text-color);
   font-size: 16px;
   line-height: 1.86;
