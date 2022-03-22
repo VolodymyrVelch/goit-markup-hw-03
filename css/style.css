@@ -44,12 +44,27 @@ body {
   font-family: Roboto, sans-serif;
 }
 /* скриваєм крапки, підкреслення */
-.list {
+ul {
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+a {
   text-decoration: none;
+}
+/* скриті заголовки */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 /* logo */
 .header {
@@ -75,10 +90,10 @@ body {
   color: var(--third-text-color);
 }
 /* навігація сайту */
-.nav {
+.nav-menu {
   display: flex;
-  margin: 0;
-  padding: 0;
+}
+.nav {
   margin-left: 93px;
 }
 .nav-link {
@@ -95,7 +110,6 @@ body {
 .nav-item + .nav-item {
   margin-left: 50px;
 }
-
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
@@ -113,24 +127,21 @@ body {
 .contact-item + .contact-item {
   margin-left: 50px;
 }
-
-.contact-link {
+.contact-head {
   color: var(--second-text-color);
   font-weight: 500;
   font-style: normal;
 }
-.contact-link:hover,
-.contact-link:focus {
+.contact-head:hover,
+.contact-head:focus {
   color: var(--accent-color);
 }
 /* Герой */
 .hero {
+  padding: 200px 0;
   background-color: var(--third-background-color);
   color: var(--third-text-color);
   text-align: center;
-}
-.hero-cont {
-  padding: 200px 0;
 }
 .hero-title {
   font-weight: 900;
@@ -196,14 +207,15 @@ body {
   margin-right: 0px;
 }
 .adv-paragraph {
-  margin-top: 10px;
-
   color: var(--second-text-color);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 /* чим ми займаємось */
+.example {
+  padding-top: 0;
+}
 .index-example {
   display: flex;
   flex-wrap: wrap;
@@ -230,7 +242,7 @@ body {
 .team-item + .team-item {
   margin-left: var(--margin-pic);
 }
-.team-conten {
+.team-content {
   padding: 30px 0;
 }
 .team-mate {
@@ -263,34 +275,35 @@ body {
 }
 /* локація */
 
-.adress {
+.location {
   color: var(--third-text-color);
   font-style: normal;
 }
-.adress:hover,
-.adress:link {
+.location:hover,
+.location:link {
   color: var(--accent-color);
 }
 /* контакти футер */
-.contact-footer {
+.address {
   margin-top: 20px;
-  display: block;
 }
-.contact-footer > .item {
+.contact-footer {
   margin-top: 9px;
 }
-
-.contact-link {
+.contact-link-foot {
   color: var(--second-text-color);
+  font-style: normal;
 }
-
+.contact-link-foot:hover,
+.contact-link-foot:focus {
+  color: var(--accent-color);
+}
 /* портфолио */
 /* Кнопки фільтр */
 .button-card {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .button-card .item + .item {
   margin-left: 8px;
